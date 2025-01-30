@@ -3,7 +3,14 @@ const subtractButtons = document.querySelectorAll(".product__subtract");
 const amounts = document.querySelectorAll(".product__amount");
 const prices = document.querySelectorAll(".product__price");
 
-const originalPrices = [15, 20, 30];
+let originalPrices = []
+
+prices.forEach(price => {
+
+    let findPrice = Number(price.textContent.replaceAll("kr", ""))
+    originalPrices.push(findPrice)
+    
+});
 
 
 addButtons.forEach((button, index) => {
