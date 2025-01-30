@@ -1,0 +1,34 @@
+#wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+   
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.product__card {
+    max-width: 300px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product__img, .product__title, .product__price, .product__amount {
+    grid-column: 1/-1;
+}
+
+.product__add, .product__subtract {
+    height: 30px;
+    align-self: end;
+}
