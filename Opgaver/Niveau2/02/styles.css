@@ -1,0 +1,49 @@
+#wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+   
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.product__card {
+    max-width: 300px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .5rem;
+    justify-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product__img, .product__title, .product__price {
+    grid-column: 1/-1;
+}
+
+.product__add, .product__subtract {
+    height: 50px;
+    width: 100px;
+}
+
+.product__amount {
+    margin: 0;
+}
+
+.product__button {
+    display: grid;
+    grid-column: 1/-1;
+    height: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: end;
+    justify-self: center;
+    align-items: center;
+}
